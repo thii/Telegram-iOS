@@ -2,6 +2,18 @@
 
 set -e
 
+export BUILD_NUMBER=1
+export APP_VERSION=1.0
+export BUNDLE_ID=com.example.Telegram
+export DEVELOPMENT_TEAM=A
+export API_ID=1
+export API_HASH=1
+export APP_CENTER_ID=1
+export IS_INTERNAL_BUILD=1
+export IS_APPSTORE_BUILD=0
+export APPSTORE_ID=1
+export APP_SPECIFIC_URL_SCHEME=telegram
+
 prepare_build_variables () {
 	BUILD_TYPE="$1"
 	case "$BUILD_TYPE" in
